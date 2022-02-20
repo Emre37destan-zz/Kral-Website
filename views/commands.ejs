@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>VK - Komutlar</title>
+  <link rel="icon" type="image/png"
+href="https://images.discordapp.net/avatars/932453970172063784/6d38249b815520d98928ee1a02d8d4bc.png?size=128" />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Website for the Discord bot QR It" />
+  <meta name="keywords" content="bot, discord, chatbot, QRCode, QR, code, shorten, link, url, chat" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CedarBlocks" />
+</head>
+<%- include ("./partials/navbar.ejs") %>
+<h1 id="title">Vampir Köylü Komutlar</h1>
+<div id="main">
+  <br />
+  <table id="commands" align="center">
+    <tbody>
+      <tr><th>Komutlar</th><th>Açıklama</th><th>İzinler</th></tr>
+      <tr><td>v-dil</td><td>Dil Değiştirme Komutudur, en - tr Dil Mevcuttur.</td><td>[Yönetici]</td>
+        <tr><td>v-bağlan4 [@ÜyeEtiket]</td><td>Discord Oyunlarından ConnectFour Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-hızlıyaz</td><td>Discord Oyunlarından Hızlı Yazma Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-tahminet</td><td>Discord Oyunlarından Sayı Tahmin Etme Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-taşkağıtmakas [@ÜyeEtiket]</td><td>Discord Oyunlarından Taş Kağıt Makas Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-tiktak [@ÜyeEtiket]</td><td>Discord Oyunlarından Tik Tak Toe Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-yılan</td><td>Discord Oyunlarından Yılan Oyunu Oynarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-eval</td><td>Botun Komutlarını Test Eder, İncelersiniz.</td><td>[Bot Sahibi]</td>
+        <tr><td>v-reset</td><td>Botu Yeniden Başlatırsınız.</td><td>[Bot Sahibi]</td>
+        <tr><td>v-botstat</td><td>Botun İstatistik Bilgilerini Kontrol Edersiniz.</td><td>[Yok.]</td>
+        <tr><td>v-davet</td><td>Botu Sunucunuza Davet Etmek İçin Linklerdir.</td><td>[Yok.]</td>
+        <tr><td>v-kullanıcıbilgi [@ÜyeEtiket]</td><td>Gelişmiş Bir Kullanıcı Bilgilerini Öğrenme Komutudur.</td><td>[Yok.]</td>
+        <tr><td>v-ping</td><td>Botun Discord Api & Sanal Sunucu Hızını Ms'sini Öğrenirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-politika</td><td>Botun Politikasını Öğrenirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-sunucubilgi</td><td>Gelişmiş Bir Sunucu Bilgilerini Öğrenme Komutudur.</td><td>[Yok.]</td>
+        <tr><td>v-yardım</td><td>Botun Yardım Komutlarını Öğrenmenizi Sağlar.</td><td>[Yok.]</td>
+        <tr><td>v-başlat</td><td>VK Oyunu Başlatırsınız.</td><td>[Yok.]</td>
+        <tr><td>v-bilgi</td><td>VK Oyun Hakkında Bilgi Edinirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-bitir</td><td>VK Oyunu Tamamen Bitirirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-büyücü [@ÜyeEtiket]</td><td>VK Oyunda Büyücü Olacak Kişiyi Etiketlersiniz.</td><td>[Yok.]</td>
+        <tr><td>v-doktor [@ÜyeEtiket]</td><td>VK Oyunda Doktor Olacak Kişiyi Etiketlersiniz.</td><td>[Yok.]</td>
+        <tr><td>v-durum</td><td>VK Oyunun Gidişaatına Bakarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-gece</td><td>VK Oyunu Geceye Çevirirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-gündüz</td><td>VK Oyunu Gündüze Çevirirsiniz.</td><td>[Yok.]</td>
+        <tr><td>v-köylü [@ÜyeEtiket]</td><td>VK Oyunda Köylü Olacak Kişiyi Etiketlersiniz.</td><td>[Yok.]</td>
+        <tr><td>v-vampir [@ÜyeEtiket]</td><td>VK Oyunda Vampir Olacak Kişiyi Etiketlersiniz.</td><td>[Yok.]</td>
+        <tr><td>v-yönetici-rol-sıfırla</td><td>VK Oyundaki Yönetici Rolü Sıfırlarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-yönetici-rol [@RolEtiket]</td><td>VK Oyuna Yönetici Rol Ayarlarsınız.</td><td>[Yok.]</td>
+        <tr><td>v-öldür [@ÜyeEtiket]</td><td>VK Oyunda Birini Öldürürsünüz.</td><td>[Yok.]</td>
+      </tr>
+    </tbody>
+    <script src="//code-eu1.jivosite.com/widget/RsTtHORs33" async></script>
+  </table>
+</div>
+</body>
+
+</html>
